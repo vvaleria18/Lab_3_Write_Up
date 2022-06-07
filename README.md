@@ -112,20 +112,19 @@ As expected, the temperature increased as the current increased. Although the ov
 
 ### 1. From your prelab design, estimate your core and winding losses when your inductor is subjected to a sinusoidal 1 A AC current waveform with a 2 A DC component. Is your estimate supported by measurements that you recorded in lab? (Note you will not explicitly do this measurement, but rather infer losses from DC resistance and your temperature measurements.)
 
-The winding losses are given by the equation P = I_rms^2 * R_DC. This means that I_rms = 2 A + 1 A / sqrt(2). Our measurements demonstrated that the resistance increases as frequency increases. Therefore, we could also expect winding losses to increase as frequency increases. From our temperature measurements, there is an average increase of about 0.92 °C per amp increase in current. For a RMS voltage of 2.707 A, an increase of 1 A would cause the power to increase by 0.213 W. Since copper has a mass of 3.94 g/m and a heat capacity of 0.395 J/g°C, in order to raise our wire by 0.92 degrees, we would need 0.3634 J of energy. If we estimate that the change in temperature per amp takes about 3 seconds, the rate would be 0.121 W which is about 52.4% of the power dissipated from just increasing the current alone. This is reasonable given the <59% given in the datasheet.
+The winding losses are given by the equation P = I_rms^2 * R_DC. This means that I_rms = 2 A + 1 A / sqrt(2). Our measurements demonstrated that the resistance increases as frequency increases. 
 
-    {P_{core} = K_1V_e}#gh-light-mode-only">
-    P_{core} = K_1V_e}#gh-dark-mode-only">
-    So our core loss is  {P_{core} = (.80kW/m^3)(4E-6) = .0032W}#gh-light-mode-only">
-   P_{core} = (.80kW/m^3)(4E-6) = .0032W
+ P_{core} = K_1V_e} 
+ So our core loss is  {P_{core} = (.80kW/m^3)(4E-6) = .0032W}  
+ P_{core} = (.80kW/m^3)(4E-6) = .0032W
 
  The R_DC = 0.0332 ohms and the P_winding is estimated to be about 0.2 W. This was actually supported by our measurements. 
  
-    <img src="https://render.githubusercontent.com/render/math?math={P_{winding} = I^2R}#gh-light-mode-only">
-    <img src="https://render.githubusercontent.com/render/math?math={\color{white}P_{winding} = I^2R}#gh-dark-mode-only">
-    So our core loss is  P_{winding} = (2 + 1 / \sqrt(2))^{2}.3 = 2.2W}#gh-light-mode-only">
-    <img src="https://render.githubusercontent.com/render/math?math={\color{white}P_{winding} = (2 + 1 / \sqrt(2))^{2}.3 = 2.2W}#gh-dark-mode-only">
-    This means our overall loss was 2.2032.
+ P_{winding} = I^2R} 
+ So our core loss is  P_{winding} = (2 + 1 / \sqrt(2))^{2}.3 = 2.2W
+ 
+ P_{winding} = (2 + 1 / \sqrt(2))^{2}.3 = 2.2W
+ This means our overall loss was 2.2032.
 
 ### 2. Does your measured inductor meet the specification? If not, why not? And what steps could you take to redesign your inductor to meet the specification? 
 
